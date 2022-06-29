@@ -1,0 +1,40 @@
+<!--pages/mapPage/mapPage.wxml-->
+
+<view class="addtag-view" animation='{{formViewAni}}'>
+    <form wx:if="{{isform}}" class="form-view" bindsubmit="addColData">
+        <view class="name-view">
+            <text>名称</text>
+            <input type="text" placeholder="请输入收藏地名称" maxlength="-1" placeholder-class="input-text"
+                name='name'/>
+        </view>
+        <view class="type-view">
+            <text>类型</text>
+            <picker name='icon' range='{{iconPicker}}' value='{{iconIndex}}' range-key='name' bindchange="bindPickerChange">
+                <view>当前选择：{{iconPicker[iconIndex].name}}</view>
+            </picker>
+        </view>
+        <view class="remarks-view">
+            <text>备注信息</text>
+            <input type="text" placeholder="请输入收藏地信息" maxlength="-1" placeholder-class="input-text"
+                name='remarks'/>
+        </view>
+        <view class="btn-view">
+            <button form-type="submit" size='mini' class="btn" style="width: 100px;"><text>添加收藏</text></button>
+            <button size='mini' class="btn" bindtap="putawayFormBindtap" style="width: 100px;"><text>收起</text></button>
+        </view>
+    </form>
+    <view wx:else class="infor-view">
+        <text class="infor-view-text">名称：{{colInfor.name}}</text>
+        <text class="infor-view-text">备注：{{colInfor.remarks}}</text>
+        <view class="btn-view">
+            <button size='mini' class="btn" bindtap="deleteColData" style="width: 100px; background-color: #FF5757;">
+                <text style="color: aliceblue;">删除</text>
+            </button>
+            <button size='mini' class="btn" bindtap="putawayFormBindtap" style="width: 100px;"><text>收起</text></button>
+        </view>        
+    </view>
+</view>
+
+<map name="mapcol" latitude="{{maplatitude}}" longitude="{{maplongitde}}" markers="{{markers}}" bindtap="bindcontroltap"
+    bindcallouttap="exhaleFormBindtap"
+></map>

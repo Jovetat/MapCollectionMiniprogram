@@ -1,0 +1,112 @@
+/* pages/mapPage/mapPage.wxss */
+page{
+    height: 100%;
+}
+.map-view{
+    width: 100%;
+}
+map{
+    width: 750rpx;
+    height: 100%;
+}
+.addtag-view{
+    height: 0px;
+    overflow: hidden;
+    background-color: #f9f1f1;
+}
+.form-view{
+    display: flex;
+    width: 650rpx;
+    margin-left: 50rpx;
+    flex-direction: column;
+}
+.name-view{
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+.name-view text{
+    color: #2D2D2D;
+}
+.name-view input{
+    height: 30px;
+    width: 430rpx;
+    margin-left: 30rpx;
+    color: #434343;
+    padding: 5px 15px 5px 20px;
+    border-radius: 14px;
+    background: #f9f1f1;
+    box-shadow: inset 5px 5px 10px #efe7e7,
+            inset -5px -5px 10px #fffbfb;
+}
+.input-text{
+    color: #616161;
+}
+.type-view{
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+.type-view text{
+    color: #2D2D2D;
+}
+.type-view picker{
+    padding: 5px 15px 5px 20px;
+    margin-left: 30rpx;
+    border-radius: 14px;
+    color: #434343;
+    background: #f9f1f1;
+    box-shadow:  5px 5px 11px #eae3e3,
+             -5px -5px 11px #ffffff;
+}
+.remarks-view{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.remarks-view text{
+    width: 34px;
+    color: #2D2D2D;
+}
+.remarks-view input{
+    height: 30px;
+    width: 500rpx;
+    margin-left: 26rpx;
+    color: #434343;
+    padding: 5px 15px 5px 15px;
+    border-radius: 14px;
+    background: #f9f1f1;
+    box-shadow: inset 5px 5px 10px #efe7e7,
+            inset -5px -5px 10px #fffbfb;
+}
+.infor-view{
+    width: 630rpx;
+    margin-left: 50rpx;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.infor-view-text{
+    height: 32px;
+    color: #434343;
+    line-height: 32px;
+}
+.btn-view{
+    display: flex;
+    margin-top: 5px;
+    height: 40px;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    border-radius: 12px;
+    background: #f9f1f1;
+    box-shadow:  5px 5px 11px #eae3e3,
+             -5px -5px 11px #ffffff;
+}
+.btn text{
+    color: #3b3b3b;
+    font-size: 15px;
+}
